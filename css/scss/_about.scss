@@ -1,0 +1,118 @@
+/* start about styles */ 
+
+#about_section {
+    .page_width {
+        padding-top: 170px;
+        padding-bottom: 50px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 84.5%;
+            height: 145px;
+            top: 125px;
+            left: auto;
+            right: auto;
+            margin-left: 75px;
+            background: url(images/bg_abot_text.png) no-repeat center / 100% auto;
+        }
+    }
+
+    .text {
+        position: relative;
+        max-width: 650px;
+        width: 50%;
+        padding-bottom: 30px;
+        //background-color: #fff;
+        float: left;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 209px;
+            height: 209px;
+            bottom: -3px;
+            left: -76px;
+            background: repeating-linear-gradient(-45deg, #EFEFEF, #EFEFEF 4px, transparent 0px, transparent 18px);
+        }
+
+        p {
+            position: relative;
+        }
+
+        .button {
+            margin-top: 49px;
+        }
+    }
+}
+
+.important_numbers {
+    margin-left: 50%;
+    margin-bottom: -75px;
+    padding-top: 120px;
+    padding-bottom: 94px;
+    padding-right: 15%;
+    padding-left: 15px;
+    background: url(images/about_logo.png) no-repeat right center;
+
+    .item {
+        display: inline-block;
+        vertical-align: top;
+        width: 150px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        margin-right: 62px;
+        position: relative;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 53px;
+            height: 53px;
+            top: 48px;
+            left: 0px;
+            background: repeating-linear-gradient(-45deg, #DBDBDB, #DBDBDB 2px, transparent 0px, transparent 5px);
+        }
+
+        .num {
+            position: relative;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 40px;
+            color: #77CA00;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        p {
+            position: relative;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1500px) {
+    
+}
+@media screen and (max-width: 1300px) {
+    
+}
+
+@media screen and (max-width: 1030px) {
+    
+}
+
+@media screen and (max-width: 800px) {
+     
+}
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (max-width: 450px) {
+
+}
+
+/* end about styles */

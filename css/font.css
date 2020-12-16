@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntulight.eot');
+    src: url('../fonts/ubuntulight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntulight.woff2') format('woff2'),
+         url('../fonts/ubuntulight.woff') format('woff'),
+         url('../fonts/ubuntulight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubunturegular.eot');
+    src: url('../fonts/ubunturegular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubunturegular.woff2') format('woff2'),
+         url('../fonts/ubunturegular.woff') format('woff'),
+         url('../fonts/ubunturegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntumedium.eot');
+    src: url('../fonts/ubuntumedium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntumedium.woff2') format('woff2'),
+         url('../fonts/ubuntumedium.woff') format('woff'),
+         url('../fonts/ubuntumedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntubold.eot');
+    src: url('../fonts/ubuntubold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntubold.woff2') format('woff2'),
+         url('../fonts/ubuntubold.woff') format('woff'),
+         url('../fonts/ubuntubold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto-medium.eot');
+    src: url('roboto-medium.eot?#iefix') format('embedded-opentype'),
+         url('roboto-medium.woff2') format('woff2'),
+         url('roboto-medium.woff') format('woff'),
+         url('roboto-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
