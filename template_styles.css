@@ -1363,6 +1363,7 @@ body.compensate-for-scrollbar, .fancybox-enabled {
   justify-content: space-around;
   border-radius: 5px;
   overflow: hidden;
+  flex-wrap: wrap;
 }
 .projects_container .slick-list {
   overflow: visible;
