@@ -1371,6 +1371,9 @@ body.compensate-for-scrollbar, .fancybox-enabled {
   top: 25px;
 }
 
+.grey_bg {
+  background: #F8F8F8;
+}
 .grey_bg .page_width {
   padding-top: 100px;
   padding-bottom: 40px;
@@ -2130,5 +2133,117 @@ footer #dev {
 }
 
 /* end footer styles */
+.breadcrumbs {
+  margin: 30px 0 60px;
+}
+.breadcrumbs li {
+  display: inline-block;
+}
+.breadcrumbs li a {
+  color: #212121;
+  font-weight: 400;
+}
+.breadcrumbs li a::after {
+  content: "/";
+  margin-left: 4px;
+}
+.breadcrumbs .active {
+  opacity: 40%;
+}
+
+.directions {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.directions .item {
+  margin: 0 15px 40px;
+  width: calc(25% - 30px);
+}
+.directions .item .img {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.directions .item .img a {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  border-radius: 5px;
+  display: block;
+}
+.directions .item .img a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  background-image: radial-gradient(64.37% 64.37% at 50% 35.63%, rgba(0, 0, 0, 0.21) 0%, rgba(0, 0, 0, 0.21) 0.01%, rgba(0, 0, 0, 0.7) 100%), url(zakladanie-ogrodow-Gliwice-Slask-4.jpg);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.directions .item .img a img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+}
+.directions .item .img a .more {
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  bottom: -30px;
+  color: #FFF;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.directions .item .img a .more:after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 21px;
+  width: 40px;
+  height: 10px;
+  position: relative;
+  filter: brightness(0.5) contrast(300%) invert(1);
+  background: url(images/arrow.svg) no-repeat right center;
+}
+.directions .item .img a:hover::before {
+  opacity: 100%;
+}
+.directions .item .img a:hover .more {
+  bottom: 60px;
+}
+.directions .item .text {
+  background-color: #FFF;
+}
+.directions .item .text p {
+  margin-top: 20px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .directions .item {
+    width: calc( 33% - 30px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .directions .item {
+    width: calc( 50% - 30px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .directions .item {
+    width: 100%;
+    margin: 0 0px 40px;
+  }
+}
 
 /*# sourceMappingURL=template_styles.css.map */

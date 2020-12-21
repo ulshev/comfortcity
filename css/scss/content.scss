@@ -1,0 +1,122 @@
+.breadcrumbs{
+    margin: 30px 0 60px;
+    li{
+        display: inline-block;
+
+        a{
+            color: $color_text;
+            font-weight: 400;
+    
+            &::after{
+                content: "/";
+                margin-left: 4px;
+            }
+        }
+    }
+    .active{
+        opacity: 40%;
+    }
+}
+
+//Start Direction//
+.directions{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    .item{
+        margin: 0 15px 40px;
+        width: calc(25% - 30px);
+       
+        .img{
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+            
+            a{
+                position: relative;
+                width: 100%;
+                height: 420px;
+                border-radius: 5px;
+                display: block;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    opacity: 0;
+                    background-image: radial-gradient(64.37% 64.37% at 50% 35.63%, rgba(0, 0, 0, 0.21) 0%, rgba(0, 0, 0, 0.21) 0.01%, rgba(0, 0, 0, 0.7) 100%), url(zakladanie-ogrodow-Gliwice-Slask-4.jpg);
+                    @include transition(all);
+                }
+
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 100%;
+                }
+                .more{    
+                    position: absolute;
+                    left: 50%;
+                    margin-left: -70px;
+                    bottom: -30px;
+                    color: #FFF;
+                    @include transition(all);
+    
+                    &:after{
+                        content: "";
+                        display: inline-block;
+                        margin-left: 10px;
+                        font-size: 21px;
+                        width: 40px;
+                        height: 10px;
+                        position: relative;
+                        filter: brightness(0.5) contrast(300%) invert(1);
+                        background: url(images/arrow.svg) no-repeat right center;
+                    }
+    
+                    
+                }
+
+                &:hover{
+                    &::before {
+                        opacity: 100%;
+                    }
+                    
+                    .more{
+                        bottom: 60px;
+                    }
+                }
+            }
+        }
+
+        .text{
+            background-color: #FFF;
+            p{
+                margin-top: 20px;
+                padding: 0 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px){
+    .directions .item{
+        width: calc( 33% - 30px);
+    }
+}
+@media screen and (max-width:900px){
+    .directions .item{
+        width: calc( 50% - 30px);
+    }
+}
+@media screen and (max-width:600px){
+    .directions .item{
+        width:100%;
+        margin: 0 0px 40px;
+    }
+}
+//End Direction//
