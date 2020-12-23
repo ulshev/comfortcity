@@ -486,25 +486,29 @@ ul.slick-dots {
         //counter-reset: ol_ounter;
 		margin-bottom: 40px;
 		padding-top: 4px;
-		margin-left: -5px;
+        margin-left: -5px;
+        
 		li {
 			//margin-bottom: 10px;
-			position: relative;
+            position: relative;
 			padding: 0px 0 0px 33px;
 			margin-bottom: 20px;
 			margin-left: 4px;
 			overflow: hidden;
-			
-			&:before {
-				content: '';
-                width: 20px;
-                height: 10px;
-                background-image: url(images/icon_li.svg);
-                background-repeat: no-repeat;
+            
+            p{
+                position: relative;
+                z-index: 1;
+            }
+			&::before{
+                content: "";
                 position: absolute;
-                left: 0;
-                top: 6px;
-			}
+                width: 20px;
+                height: 20px;
+                top: 0px;
+                left: 20px;
+                background: repeating-linear-gradient(-45deg, #FFF500, #FFF500 1px, transparent 1px, transparent 3px);
+            }
         }
 	}
 	
