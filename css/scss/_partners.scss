@@ -16,8 +16,16 @@
     }
 
     .slick-arrow {
-        top: -54px;
+        top: -63px;
         left: auto;
+        margin: 0;
+        height: 20px;
+
+        &::before {
+            width: 16px;
+            height: 16px;
+            top: 3px;
+        }
     }
 
     .slick-prev {

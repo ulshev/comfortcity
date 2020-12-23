@@ -30,12 +30,12 @@ $(document).ready(function() {
 		fade: true,
 		focusOnSelect: true,
 		//infinite: false,
-		autoplay: true,
+		//autoplay: true,
 	});
 
 	$('.partners_slider').slick({
 	    slidesToShow: 4,
-	    //slidesToScroll: 2,
+	    slidesToScroll: 1,
 		arrows: true,
 		prevArrow: '<span class="slick-prev">&nbsp;</span>',
 		nextArrow: '<span class="slick-next">&nbsp;</span>',
@@ -66,8 +66,90 @@ $(document).ready(function() {
 		]
 	});
 
+	$('.directions_slider').slick({
+	    slidesToShow: 4,
+	    slidesToScroll: 1,
+		arrows: true,
+		prevArrow: '<span class="slick-prev">&nbsp;</span>',
+		nextArrow: '<span class="slick-next">&nbsp;</span>',
+	    dots: false,
+	    //centerMode: true,
+		//vertical: true,
+		//focusOnSelect: true,
+		//initialSlide: 1,
+		responsive: [
+			{
+				breakpoint: 1300,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 900,
+				settings: {
+					  slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+		]
+	});
 
+	$('.steps .numbers_slider').slick({
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    arrows: false,
+		//infinite: false,
+		fade: true,
+	    asNavFor: '.steps .description_slider',
+	  });
+	$('.steps .description_slider').slick({
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+		arrows: true,
+		prevArrow: '<span class="slick-prev">&nbsp;</span>',
+		nextArrow: '<span class="slick-next">&nbsp;</span>',
+	    asNavFor: '.steps .numbers_slider',
+		//dots: true,
+		fade: true,
+		//focusOnSelect: true,
+		//infinite: false,
+		//autoplay: true,
+	});
 
+	$('.project_page .main_slider').slick({
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    arrows: true,
+	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
+	    nextArrow: '<span class="slick-next">&nbsp;</span>',
+	    //fade: true,
+	    //variableWidth: true,
+	    adaptiveHeight: true,
+	    asNavFor: '.project_page .preview_slider',
+	  });
+	$('.project_page .preview_slider').slick({
+	    slidesToShow: 4,
+	    slidesToScroll: 1,
+	    arrows: false,
+	    asNavFor: '.project_page .main_slider',
+	    dots: false,
+	    //centerMode: true,
+	    //vertical: true,
+	    focusOnSelect: true,
+	    responsive: [
+		  {
+		    breakpoint: 600,
+		    settings: {
+		      slidesToShow: 2,
+		    }
+		  },
+		]
+	});
 
 
 
@@ -491,35 +573,7 @@ $(document).ready(function() {
 		nextArrow: '<span class="slick-next">&nbsp;</span>',
 	});
 
-	$('.project_page .main_slider').slick({
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    arrows: false,
-	    fade: true,
-	    //variableWidth: true,
-	    adaptiveHeight: true,
-	    asNavFor: '.project_page .preview_slider',
-	  });
-	$('.project_page .preview_slider').slick({
-	    slidesToShow: 4,
-	    slidesToScroll: 1,
-	    arrows: true,
-	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
-	    nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    asNavFor: '.project_page .main_slider',
-	    dots: false,
-	    //centerMode: true,
-	    //vertical: true,
-	    focusOnSelect: true,
-	    responsive: [
-		  {
-		    breakpoint: 600,
-		    settings: {
-		      slidesToShow: 4,
-		    }
-		  },
-		]
-	});
+
 
 
 	$('.gallery_slider').slick({

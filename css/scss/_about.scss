@@ -98,11 +98,11 @@
     background: no-repeat center / cover;
 
     .page_width {
-        padding-bottom: 64px;
+        padding-bottom: 96px;
     }
     .text {
         //width: 50%;  
-        margin-top: 60px;
+        //margin-top: 60px;
 		max-width: 880px;
 		box-sizing: border-box;
 		position: relative;
@@ -135,11 +135,17 @@
     }
 }
 
-.grey_bg {
+.grey_bg.text_block {
     background: #F8F8F8;
     .page_width {
         padding-top: 100px;
         padding-bottom: 40px;
+    }
+
+    .advantages_container {
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -176,6 +182,12 @@
         .button {
             margin-top: 50px;
         }
+    }
+}
+
+.text_block {
+    .page_width {
+        padding-bottom: 66px;
     }
 }
 

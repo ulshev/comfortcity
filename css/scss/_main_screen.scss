@@ -35,12 +35,13 @@
 		@include transition(all);
 		//opacity: 0.2;
 		overflow: hidden;
+		background: no-repeat center top / cover;
 		
-		img {
-			width: 110%;
-			height: 110%;
-			object-fit: cover;
-		}
+		// img {
+		// 	width: 110%;
+		// 	height: 110%;
+		// 	object-fit: cover;
+		// }
     }
     .text {
 		//width: 50%;        

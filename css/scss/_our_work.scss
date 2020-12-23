@@ -1,0 +1,111 @@
+/* start our_work styles */ 
+
+#our_work {
+    background: #143F00 url(images/bg_our_work.jpg) no-repeat center top ;
+    margin-bottom: 104px;
+    .page_width {
+        padding-top: 103px;
+        padding-bottom: 60px;
+        color: #fff;
+    }
+}
+
+.steps {
+    position: relative;
+
+    &:after {
+		@include clear();
+    }
+}
+
+.numbers_slider {
+    position: relative;
+    float: left;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+
+    .slick-list {
+        margin: 0;
+        //overflow: visible;
+    }
+    .item {
+        position: relative;
+        padding: 10px 0px 10px 0;
+        margin: 0px 0px 30px;
+        //width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+        @include transition(all);
+        
+        .icon {
+            margin-bottom: 20px;
+            margin-left: 23px;
+            height: 237px;
+            width: 237px;
+            position: relative;
+            border-radius: 50%;
+        }
+        .text {
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 115px;
+            position: relative;
+            overflow: hidden;
+        }
+    }
+}
+.description_slider {
+    margin: 0 0 0 45%;
+    padding: 20px 0 0 27px;
+    position: static;
+
+    .slick-list {
+        margin: 0;
+    }
+
+    .slick-arrow {
+        &:before {
+            border-color: #fff;
+        }
+    }
+    .item {
+        position: relative;
+        box-sizing: border-box;
+        @include transition(all);
+        
+        .icon {
+            margin-bottom: 30px;
+            height: 170px;
+        }
+        .text {
+            margin-bottom: 33px;
+            min-height: 145px;
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    
+}
+@media screen and (max-width: 1300px) {
+    
+}
+
+@media screen and (max-width: 1030px) {
+    
+}
+
+@media screen and (max-width: 800px) {
+     
+}
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (max-width: 450px) {
+
+}
+
+/* end our_work styles */
