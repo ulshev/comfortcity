@@ -60,17 +60,6 @@ footer {
 		}
 	}
 
-	.social {
-		width: 100%;
-		text-align: right;
-		margin-top: -112px;
-		padding-right: 55px;
-
-		a {
-			margin-right: 11px;
-		}
-	}
-
 	#foo_logo {
 		margin-bottom: 22px;
 		a {
@@ -115,6 +104,20 @@ footer {
 
 	#dev {
 		float: left;
+	}
+	.social {
+		width: 100%;
+		text-align: right;
+		margin-top: -112px;
+		padding-right: 55px;
+	}
+}
+
+
+
+.social {
+	a {
+		margin-right: 11px;
 	}
 }
 

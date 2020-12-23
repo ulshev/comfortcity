@@ -22,7 +22,7 @@
 	<script type="text/javascript" src="js/script.js"></script> 
 	
 </head>
-<body id="index">
+<body>
     <div class="wrapper">
 	<!-- шапка -->
 	
@@ -59,23 +59,40 @@
 	</header>
     <!-- end шапка -->
     
-    <!--Хлебные крошки-->
-    <div class="page_width">
-        <div class="breadcrumbs">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="direction.html">Направления</a></li>
-                <li class="active">Детские игровые площадки</li>
-            </ul>
-        </div>
-    </div>
-    <!--End Хлебные крошки-->
-    
-    <!--Контент-->
     <main>
         <div class="page_width">
+            <!--Хлебные крошки-->
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="direction.html">Направления</a></li>
+                    <li class="active">Детские игровые площадки</li>
+                </ul>
+            </div>
+            <!--end Хлебные крошки-->
+
             <h1>Детские игровые площадки</h1>
             <a href="direction.html" class="all_link">Все направления</a>
+
+            <div class="top_gallery">
+                <div class="images_slider">
+                    <div class="item"><img src="images/photo_big.jpg"></div>
+                    <div class="item"><img src="images/photo_big.jpg"></div>
+                    <div class="item"><img src="images/photo_big.jpg"></div>
+                </div>
+                <div class="counter_slider">
+					<div class="item">
+						<div class="main_slide_num">01</div><div class="main_slide_quantity">03</div>
+					</div>
+					<div class="item">
+						<div class="main_slide_num">02</div><div class="main_slide_quantity">03</div>
+					</div>
+					<div class="item">
+						<div class="main_slide_num">03</div><div class="main_slide_quantity">03</div>
+					</div>
+				</div>
+            </div>
+
             <div class="text">
                 <h2>Описание направления</h2>
                 <p>Активный образ жизни – залог нашего здоровья и счастья. В особенности активный образ жизни важен для детей, ведь игра на уличных спортивных площадках не только развивает их физически, но и учит общаться со своими сверстниками. Выяснено, что, играя на детских игровых комплексах, ребёнок становится ловким, гибким, у него правильно развивается мышечная мускулатура, а также происходит более быстрое психологическое и социальное развитие.</p>
@@ -105,52 +122,115 @@
                     </div>
                 </div>
             </div>
-
-            <div class="why_we">
-                <h2>Почему мы?</h2>
-                <div class="advantages_container">
-                    <div class="item">
-                        <div class="icon"><img src="images/advantage_image1.png" alt=""></div>
-                        <div class="text">
-                            <p>Широкий ассортимент продукции</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="icon"><img src="images/advantage_image2.png" alt=""></div>
-                        <div class="text">
-                            <p>Сертифицированная продукция</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="icon"><img src="images/advantage_image3.png" alt=""></div>
-                        <div class="text">
-                            <p>Многолетний опыт работы на&nbsp;рынке</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="icon"><img src="images/advantage_image4.png" alt=""></div>
-                        <div class="text">
-                            <p>Гибкая ценовая политика</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
     <!--End Контент-->
 
-    <div class="main_section">
-        <img src="images/about_steps.jpg" style="width: 100%" alt="">
+    
+    <div class="main_section grey_bg">
+	    <div class="page_width">
+            <h2>Почему мы?</h2>
+            <div class="advantages_container">
+				<div class="item">
+					<div class="icon"><img src="images/advantage_image1.png" alt=""></div>
+					<div class="text">
+						<p>Широкий ассортимент продукции</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon"><img src="images/advantage_image2.png" alt=""></div>
+					<div class="text">
+						<p>Сертифицированная продукция</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon"><img src="images/advantage_image3.png" alt=""></div>
+					<div class="text">
+						<p>Многолетний опыт работы на&nbsp;рынке</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon"><img src="images/advantage_image4.png" alt=""></div>
+					<div class="text">
+						<p>Гибкая ценовая политика</p>
+					</div>
+				</div>
+			</div>
+        </div>
     </div>
     
-    <!--Контент-->
-    <main>
-        <div class="page_width">
-            <div class="gallery">
-                <h2>Галерея</h2>
-                <div class="buttons middle">
-                    <a href="contacts.html" class="button">Задать вопрос</a>
+
+    <div class="main_section" id="our_work">
+		<div class="page_width">
+            <h2>Как мы работаем</h2>
+            <div class="steps">
+                <div class="numbers_slider">
+                    <div class="item">
+                        <div class="icon"><img src="images/icon_num1.png"></div>
+                        <div class="text">Шаг 1</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon"><img src="images/icon_num1.png"></div>
+                        <div class="text">Шаг 2</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon"><img src="images/icon_num1.png"></div>
+                        <div class="text">Шаг 3</div>
+                    </div>
                 </div>
+                <div class="description_slider">
+                    <div class="item">
+                        <div class="text">
+                            <h3>1. Оценка задачи</h3>
+                            <p>Активный образ жизни – залог нашего здоровья и счастья. В особенности активный образ жизни важен для детей, ведь игра на уличных спортивных площадках не только развивает их физически, но и учит общаться со своими сверстниками.</p>
+                        </div>
+                        <a class="button" href="#">Заказать проект</a>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            <h3>2. Расчет стоимости</h3>
+                            <p>В особенности активный образ жизни важен для детей, ведь игра на уличных спортивных площадках не только развивает их физически, но и учит общаться со своими сверстниками. В особенности активный образ жизни важен для детей, ведь игра на уличных спортивных площадках не только развивает их физически, но и учит общаться со своими сверстниками.</p>
+                        </div>
+                        <a class="button" href="#">Заказать проект</a>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            <h3>3. Ещё один пункт</h3>
+                            <p>Активный образ жизни – залог нашего здоровья и счастья</p>
+                        </div>
+                        <a class="button" href="#">Заказать проект</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+    
+    <!--Контент-->
+    <div class="main_section">
+        <div class="page_width">
+            <h2>Галерея</h2>
+            <div class="gallery_slider">
+                <div class="item">
+                    <a data-fancybox="gallery" href="images/photo7.jpg"><img src="images/photo7.jpg"></a>
+                </div>
+                <div class="item video">
+                    <a data-fancybox="gallery" href="images/photo8.jpg"><img src="images/photo8.jpg"></a>
+                </div>
+                <div class="item">
+                    <a data-fancybox="gallery" href="images/photo9.jpg"><img src="images/photo9.jpg"></a>
+                </div>
+                <div class="item">
+                    <a data-fancybox="gallery" href="images/photo1.jpg"><img src="images/photo1.jpg"></a>
+                </div>
+                <div class="item video">
+                    <a data-fancybox="gallery" href="images/photo2.jpg"><img src="images/photo2.jpg"></a>
+                </div>
+                <div class="item">
+                    <a data-fancybox="gallery" href="images/photo3.jpg"><img src="images/photo3.jpg"></a>
+                </div>
+            </div>
+            <div class="buttons middle">
+                <a href="contacts.html" class="button">Задать вопрос</a>
             </div>
             <div class="text">
                 <h3>Сео текст</h3>
@@ -161,7 +241,7 @@
             <div class="other_directions">
                 <h2>Другие наши направления</h2>
                 <a href="direction.html" class="all_link">Все направления</a>
-                <div class="directions">
+                <div class="directions directions_slider">
                     <div class="item">
                         <div class="img">
                             <a href="direction_ditails.html">
@@ -170,18 +250,18 @@
                             </a>
                         </div>
                         <div class="text">
-                            <p>Ландшафтное проектирование и дизайн</p>
+                            <p><a href="direction_ditails.html">Ландшафтное проектирование и дизайн</a></p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="img">
-                            <a href="direction_ditails.html">
+                            <a href="direction.html">
                                 <img src="images/directions_2.jpg" alt="">
                                 <span class="more">Подробнее</span>
                             </a>
                         </div>
                         <div class="text">
-                            <p>Здоровье и активность пожилых людей</p>
+                            <p><a href="direction_ditails.html">Здоровье и активность пожилых людей</a></p>
                         </div>
                     </div>
                     <div class="item">
@@ -192,7 +272,7 @@
                             </a>
                         </div>
                         <div class="text">
-                            <p>Городская парковая мебель</p>
+                            <p><a href="direction_ditails.html">Городская парковая мебель</a></p>
                         </div>
                     </div>
                     <div class="item">
@@ -203,13 +283,24 @@
                             </a>
                         </div>
                         <div class="text">
-                            <p>Озеленение</p>
+                            <p><a href="direction_ditails.html">Озеленение</a></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <a href="#">
+                                <img src="images/directions_5.jpg" alt="">
+                                <span class="more">Подробнее</span>
+                            </a>
+                        </div>
+                        <div class="text">
+                            <p><a href="direction_ditails.html">Освещение и wi-fi</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
     <!--End Контент-->
     
     <!-- Форма -->

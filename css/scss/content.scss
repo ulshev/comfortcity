@@ -20,156 +20,22 @@
     }
 }
 
-//Start Direction//
-.directions{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-    .item{
-        margin: 0 15px 40px;
-        width: calc(25% - 30px);
-       
-        .img{
-            position: relative;
-            border-radius: 5px;
-            overflow: hidden;
-            
-            a{
-                position: relative;
-                width: 100%;
-                height: 420px;
-                border-radius: 5px;
-                display: block;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                    opacity: 0;
-                    background-image: radial-gradient(64.37% 64.37% at 50% 35.63%, rgba(0, 0, 0, 0.21) 0%, rgba(0, 0, 0, 0.21) 0.01%, rgba(0, 0, 0, 0.7) 100%), url(zakladanie-ogrodow-Gliwice-Slask-4.jpg);
-                    @include transition(all);
-                }
-
-                img{
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100%;
-                    opacity: 100%;
-                }
-                .more{    
-                    position: absolute;
-                    left: 50%;
-                    margin-left: -70px;
-                    bottom: -30px;
-                    color: #FFF;
-                    @include transition(all);
-    
-                    &:after{
-                        content: "";
-                        display: inline-block;
-                        margin-left: 10px;
-                        font-size: 21px;
-                        width: 40px;
-                        height: 10px;
-                        position: relative;
-                        filter: brightness(0.5) contrast(300%) invert(1);
-                        background: url(images/arrow.svg) no-repeat right center;
-                    }
-    
-                    
-                }
-
-                &:hover{
-                    &::before {
-                        opacity: 100%;
-                    }
-                    
-                    .more{
-                        bottom: 60px;
-                    }
-                }
-            }
-        }
-
-        .text{
-            background-color: #FFF;
-            p{
-                margin-top: 20px;
-                padding: 0 20px;
-                text-align: center;
-            }
-        }
-    }
-}
-
-@media screen and (max-width:1024px){
-    .directions .item{
-        width: calc( 33% - 30px);
-    }
-}
-@media screen and (max-width:900px){
-    .directions .item{
-        width: calc( 50% - 30px);
-    }
-}
-@media screen and (max-width:600px){
-    .directions .item{
-        width:100%;
-        margin: 0 0px 40px;
-    }
-}
-//End Direction//
-
-//Start Direction_Ditails//
-    .icon_bg{
-        position: relative;
-        &::after{
-            content: '';
-            width: 360px;
-            height: 360px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            background-image: url(images/about_logo.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .text_and_image{
-            position: relative;
-            z-index: 1;
-        }
-    }
-    .middle{
-        text-align: center;
-        margin-top: 60px;
-    }
-
-    .gallery{
-        margin-top: 100px;
-    }
-
-    .other_directions{
-        margin-top: 100px;
-    }
-//End Direction_Ditails//
 
 //Start Contact// 
-    .contacts{
+.contacts_block {
+    position: relative;
+    .text{
         position: relative;
-        width: 57%;
-        float: right;
-        margin-top: 30px;
+        margin-left: 41.2%;
+        padding-top: 33px;
+        margin-bottom: -70px;
 
         &::before {
             content: "";
             position: absolute;
             width: 250px;
             height: 250px;
-            bottom: 0px;
+            top: 0px;
             left: -110px;
             background: repeating-linear-gradient(-45deg, #EFEFEF, #EFEFEF 4px, transparent 0px, transparent 18px);
         }
@@ -178,7 +44,7 @@
             width: 230px;
             height: 225px;
             position: absolute;
-            top: 0;
+            top: 10px;
             right: 0;
             background-image: url(images/about_logo.png);
             background-repeat: no-repeat;
@@ -186,11 +52,11 @@
         }
 
         h2{
-            padding: 0 0 30px 20px;
+            padding: 0 0 7px 20px;
             position: relative;
             z-index: 1;
         }
-        .foo_bottom{
+        .contacts{
             display: flex;
             flex-wrap: wrap;
             position: relative;
@@ -210,34 +76,54 @@
             }
         }
         .social{
-            margin: 0px 20px 30px;
+            margin: 0px 0px 30px 40px;
         }
+    }
+}
+#map{
+    width: 100%;
+    height: 650px;
+    margin: 0px 0px 100px;
+    position: relative;
+    opacity: 0;
+
+    div {
+        width: 100%;
+        height: 100%;
     }
 
     iframe{
         width: 100%;
-        height: 650px;
-        margin: 60px 0px 100px;
-        margin-bottom: 60px 0 100px;
+        height: 100%;
     }
+}
+    
 
 .min_forms{
     position: absolute;
+    z-index: 1;
     width: 490px;
-    padding: 40px 60px 60px;
+    padding: 40px 60px 40px;
     border-radius: 5px;
     box-sizing: border-box;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     background: rgba(0, 0, 0, 0.6);
-
     color: #FFF;
+    top: 0;
+
+    h2 {
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
 
     p{
-        padding-bottom: 20px;
+        margin-bottom: 30px;
+        font-weight: 300;
     }
 
     .textarea {
         margin-left: 10px;
+        margin-bottom: 37px;
 
         textarea{
             height: 90px;
@@ -247,6 +133,7 @@
     .input_text {
         width: calc(100% - 20px);
         float: none;
+        margin-bottom: 20px;
     }
 
     input[type=checkbox]:not(checked) + label {
@@ -265,17 +152,17 @@
 
     .input_personal_info{
         padding-top: 0px;
+        float: none;
     }
 
     .buttons{
         float: none;
         text-align: center;
+        margin-top: 26px;
+        margin-bottom: 0;
     }
 }
 
-.margin_bottom{
-    margin-bottom: 100px;
-}
 
 @media screen and (max-width:1610px){
     .contacts{

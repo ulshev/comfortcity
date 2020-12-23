@@ -135,7 +135,7 @@
     }
 }
 
-.grey_bg.text_block {
+.grey_bg {
     background: #F8F8F8;
     .page_width {
         padding-top: 100px;
@@ -181,6 +181,10 @@
     .text {
         .button {
             margin-top: 50px;
+        }
+        
+        *:last-child {
+            margin-bottom: 0;
         }
     }
 }
