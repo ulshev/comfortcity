@@ -96,7 +96,9 @@
 
         .text{
             background-color: #FFF;
-            p{
+            a{
+                color: $color_text;
+                display: block;
                 margin-top: 20px;
                 padding: 0 20px;
                 text-align: center;
