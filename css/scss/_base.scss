@@ -52,7 +52,7 @@ body {
     width: 100%;
     min-height: 100%;
     
-	background:  url(images/site.jpg) no-repeat center top;
+	//background:  url(images/site.jpg) no-repeat center top;
 	//background-size: 1920px auto;
 }
 
@@ -98,18 +98,21 @@ body {
 	}
 	.wrapper {
 		overflow: hidden;
-	}
+    }
+    .main_section h2 {
+        margin-bottom: 20px;
+    }
 }
 // @media screen and (max-width: 700px) {
 //     .main_section {
 // 		text-align: center;
 // 	}
 // }
-// @media screen and (max-width: 450px) {
-//     .page_width {
-// 		padding: 0px 10px;
-//     }
-// }
+@media screen and (max-width: 450px) {
+    .page_width {
+		padding: 0px 10px;
+    }
+}
 
 a {
     text-decoration: none;
@@ -129,7 +132,7 @@ p {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 20px;
 	position: relative;
     //letter-spacing: 0.01em;
@@ -187,6 +190,7 @@ h6, .h6 {
     h1, .h1 {
         font-size: 30px;
         line-height: 40px;
+        margin-bottom: 30px;
     }
     h2, .h2 {
         font-size: 24px;
@@ -210,6 +214,7 @@ h6, .h6 {
     h1, .h1 {
         font-size: 24px;
         line-height: 29px;
+        margin-bottom: 20px;
     }
     h2, .h2 {
         font-size: 22px;
@@ -318,6 +323,14 @@ h6, .h6 {
     }
 }
 @media screen and (max-width: 1030px) {
+    .buttons {
+        padding-bottom: 10px;
+    
+        .button {
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+    }
 	.all_link {
         margin-top: -60px;
     }
@@ -544,29 +557,29 @@ ul.slick-dots {
     }
 }
 
-@media screen and (max-width:1030px){
-    .text {
-        .button {
-            margin-top: 30px;
-        }
-    }
-}
+// @media screen and (max-width:1030px){
+//     .text {
+//         .button {
+//             margin-top: 30px;
+//         }
+//     }
+// }
 @media screen and (max-width:600px){
     .text {
         font-size: 14px;
         line-height: 20px;
-        .button {
-            margin-top: 10px;
-        }
+        // .button {
+        //     margin-top: 10px;
+        // }
     }
 }
-@media screen and (max-width:450px){
-    .text {
-        .button {
-            margin-top: 0px;
-        }
-    }
-}
+// @media screen and (max-width:450px){
+//     .text {
+//         .button {
+//             margin-top: 0px;
+//         }
+//     }
+// }
 
 .tabs_container {
 	position: relative;
@@ -680,8 +693,20 @@ main {
         padding-bottom: 90px;
     }
 }
-
-
+@media screen and (max-width:1030px){
+    main {
+        .page_width {
+            padding-bottom: 50px;
+        }
+    }
+}
+@media screen and (max-width:600px){
+    main {
+        .page_width {
+            padding-bottom: 30px;
+        }
+    }
+}
 body.compensate-for-scrollbar, .fancybox-enabled {
     overflow: auto;
 }

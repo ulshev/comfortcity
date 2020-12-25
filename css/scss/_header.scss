@@ -28,6 +28,8 @@
 	font-size: 22px;
 	line-height: 25px;
 	float: left;
+	position: relative;
+	z-index: 1;
 	
 	a {
 	    @include transition(opacity);
@@ -48,6 +50,8 @@
 	text-align: right;
 	max-width: 200px;
 	padding-top: 10px;
+	position: relative;
+	z-index: 1;
 
 	a {
 		display: inline-block;
@@ -76,6 +80,11 @@
 		letter-spacing: 0.3px;
 		color: $color_a;
 		border-bottom: 1px dashed $color_a;
+
+		&:hover {
+			text-decoration: none;
+			border-color: transparent;
+		}
 	}
 }
 
@@ -111,34 +120,135 @@
 			color: #fff;
 		}
 	}
+
+	.menu_button {
+		border-color: #fff;
+
+		&::before {
+			border-color: #fff;
+		}
+	}
+}
+.menu_button {
+	border-top: 3px solid $color_a;
+	border-bottom: 3px solid $color_a;
+	//border-radius: 3px;
+	float: right;
+	width: 40px;
+	height: 24px;
+	margin: 20px 0 0 30px;
+	position: relative;
+	&::before {
+		content: '';
+		width: 100%;
+		top: 50%;
+		border-top: 3px solid $color_a;
+		margin-top: -2px;
+		position: absolute;
+	}
+
+	&::after {
+		content: '';
+		position: fixed;
+		width: calc(100% - 320px);
+		height: 100%;
+		top: 0;
+		left: 0;
+		display: none;
+		//background-color: rgba(43, 64, 4, 0.5);
+	}
+
+	&.active {
+		&::after {
+			display: block;
+		}
+	}
 }
 
 
-
-
+@media screen and (max-width: 1300px) {	
+	#header .page_width {
+		padding-top: 15px;
+	}
+	.main_menu {
+		margin: 25px 195px 13px 250px;
+	}
+}
 
 @media screen and (max-width: 1030px) {	
-	
+	.menu_button {
+		display: block;
+		z-index: 2;
+	}
+
+	.main_menu {
+		position: absolute;
+		z-index: 0;
+		width: 320px;
+		height: 100vh;
+		right: -100%;
+		top: 0;
+		padding: 115px 30px 40px;
+		margin: 0;
+		background: rgba(0, 0, 0, 0.6);
+		backdrop-filter: blur(10px);
+		box-sizing: border-box;
+		@include transition(all);
+
+		a {
+			color: #fff;
+		}
+
+		ul {
+			display: block;
+			li {
+				margin-bottom: 20px;
+			}
+		}
+	}	
 }
 
 @media screen and (max-width: 800px) {	
-	
+	#logo {
+		width: 200px;
+	}
+	.menu_button {
+		margin: 10px 0 0 15px;
+	}
+	#header_cont {
+		max-width: 180px;
+		padding-top: 0px;
+
+		.tel {
+			font-size: 16px;
+			margin-bottom: -3px;
+			line-height: 20px;
+		}
+		.btn_call {
+			letter-spacing: 0.1px;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
 }
 
-@media screen and (max-width: 1030px) and (min-width: 600px) {
-	
-	
+@media screen and (max-width: 500px) {
+	#logo {
+		width: 56px;
+		overflow: hidden;
+
+		img {
+			width: 200px;
+			max-width: none;
+		}
+	}
 }
 
-@media screen and (max-width: 600px) {
+// @media screen and (max-width: 450px) {
 	
-}
-
-@media screen and (max-width: 450px) {
+// }
+// @media screen and (max-width: 400px) {
 	
-}
-@media screen and (max-width: 400px) {
-	
-}
+// }
 
 /* end header styles */

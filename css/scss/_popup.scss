@@ -1,0 +1,222 @@
+.gUniFormModalWindow.form_block {
+    background: rgba(55, 55, 53, 0.7);
+    max-width: none;
+    position: fixed;
+
+    .overlay {
+        position: fixed;
+        //z-index: 2;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .gUniFormModalWindowContainer {
+        border-radius: 5px;
+        line-height: 28px;
+        padding: 0;
+        width: 82%;
+        max-width: 490px;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(10px);
+
+        color: #fff;
+    }
+
+    .gUniFormContainer {
+        //background: #fff;
+        //border-radius: 5px;
+        padding: 60px 65px 20px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 22px;
+        box-sizing: border-box;
+        max-width: 790px;
+        margin: 0 auto;
+    }
+
+    .uFormHeading {
+        font-family: $font_family_os;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        //text-transform: uppercase;
+    }
+
+    .uFormHeading + p {
+        font-size: 16px;
+        margin-bottom: 30px;
+        max-width: 360px;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .input_text {
+        width: auto;
+        float: none;
+        margin: 0 0px 20px;
+    }
+
+    .textarea {
+        margin-left: auto;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    .input_personal_info {
+        padding-top: 0px;
+    }
+
+    .gUniFormModalWindowExit {
+        width: 26px;
+        height: 26px;
+        top: 26px;
+        right: 25px;
+        border-radius: 50%;
+        transform: rotate(-45deg);
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            border-top: 2px solid #BECAD3;
+            top: 50%;
+            left: 50%;
+            margin: -1px 0 0 -13px;
+            @include transition(all);
+        }
+        &::after {
+            transform: rotate(90deg);
+        }
+
+        // &:hover {
+        //     &::before, &::after {
+        //         background-color: #262945;
+        //     }
+        // }
+    }
+
+
+
+    .buttons {
+        float: none;
+    }
+
+}
+
+
+// @media screen and (max-width: 1600px) {
+
+// }
+
+@media screen and (max-width: 1300px) {
+    .gUniFormModalWindow.form_block .gUniFormContainer {
+        padding: 60px 70px 20px;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormContainer {
+            padding: 50px 50px 20px;
+        }
+        .uFormHeading {
+            font-size: 28px;
+		    line-height: 38px;
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 14px;
+		    line-height: 20px;
+        }
+        .basket_table {
+            margin-bottom: 30px;
+        }
+        .container {
+            padding-bottom: 40px;
+            .buttons {
+                padding-top: 0;
+            }
+            .text {
+                padding-left: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormContainer {
+            padding: 50px 30px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormModalWindowContainer {
+            width: 90%;
+        }
+        .gUniFormContainer {
+            padding: 50px 20px 20px;
+        }
+        .uFormHeading {
+            font-size: 24px;
+		    line-height: 34px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormContainer {
+            padding: 40px 20px 20px;
+        }
+        .uFormHeading {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .gUniFormModalWindowExit {
+            width: 30px;
+            height: 30px;
+            top: 15px;
+            right: 15px;
+        }
+        .small {
+            margin-bottom: 20px;
+        }
+        .basket_table {
+            margin-bottom: 0px;
+        }
+        .container {
+            padding-bottom: 10px;
+            flex-wrap: wrap;
+
+            .image {
+                text-align: center;
+                margin: 0 auto 20px;
+            }
+
+            .text {
+                padding-left: 0;
+                text-align: center;
+            }
+            
+        }
+    }
+
+}
+// @media screen and (max-width: 450px) {
+
+// }

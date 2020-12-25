@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css"  media="all" href="css/jquery.fancybox.css">
     <link rel="stylesheet" type="text/css"  media="all" href="css/font.css">
     
-	<!-- <link rel="stylesheet" type="text/css"  media="all" href="css/ModalWindow.css">!!! стили не подключать -->
+	<link rel="stylesheet" type="text/css"  media="all" href="css/ModalWindow.css">
     
     <link rel="stylesheet" type="text/css"  media="all" href="template_styles.css">
     
@@ -31,10 +31,10 @@
 			<div id="logo">
 				<a href="index.html"><img src="images/logo.svg" alt="Комфортный город"></a>
 			</div>
-		
+            <div class="menu_button mob"></div>
 			<div id="header_cont">
 				<a class="tel" href="tel:+78124267890">+7 (812) 426-78-90</a>
-				<a class="btn_call" href="#">Заказать звонок</a>
+				<a class="btn_call btn-write" href="#">Заказать звонок</a>
 			</div>
 			<nav class="main_menu">
 				<ul class="menu">
@@ -295,7 +295,7 @@
 						</ul>
 					</div>
 					<div class="column">
-						<h5>Благоустройство города</h5>
+						<h5>Комфортный город</h5>
 						<ul>
 							<li><a href="projects.html">Проекты</a></li>
 							<li><a href="about.html">О компании</a></li>
@@ -314,7 +314,7 @@
 			<div class="foo_bottom">
 				<div class="cont">
 					<a class="tel" href="tel:+78124267890">+7 (812) 426-78-90</a><br>
-					<a class="btn_call" href="#">Заказать звонок</a>
+					<a class="btn_call btn-write" href="#">Заказать звонок</a>
 				</div>
 				<div class="cont">
 					<a class="tel" href="tel:+79213972418">+7 (921) 397-24-18</a>
@@ -325,11 +325,101 @@
 				<div class="cont">
 					<p class="address">199178, Санкт-Петербург, наб. реки Смоленки, дом 3, корп. 2, офис 34-Н</pa>
 				</div>
-				<a class="button" href="#">Заказать проект</a>
+				<a class="button btn-order_project" href="#">Заказать проект</a>
 			</div>
 	    </div>
 	</footer>
 	<!-- end подвал -->
+
+	<!-- Модальные окна -->
+	<div class="gUniFormModalWindow form--modal form_block form-write">
+		<div class="gUniFormHideScrollBar">
+		<div class="gUniFormCn100">
+		<div class="overlay"></div>
+		<div class="gUniFormModalWindowContainer">
+		  <div class="gUniFormContainer">
+			<div class="uFormHeading">Заказать звонок</div>
+			<p>Заполните форму и мы свяжемся с вами в ближайшее время</p>
+			<form enctype="multipart/form-data" action="" method="post" class="gUniForm">
+				<div class="input_text">
+					<input id="name" class="name" name="name" type="text" value="" placeholder="Имя">
+					<div class="uError"></div>
+				</div>
+				<div class="input_text">
+					<input id="phone" class="rfield phone" name="phone" type="text" value="" placeholder="*+7 (___) ___-__-__">
+					<div class="uError"></div>
+				</div>
+				<div class="input_personal_info">
+					<input type="checkbox" id="personal_info_main" name="personalInfo" data-required="Y" value="Y">
+					<label for="personal_info_main">Я даю согласие на <a href="/personal-info/" target="_blank" rel="nofollow noopener">обработку персональных данных</a></label>
+				</div>
+				<div class="buttons">
+					<button type="submit" name="web_form_submit" class="button" value="Отправить">Отправить</button>
+				</div>
+				<div class="errors"></div>
+			</form>
+		</div>
+		<a href="#" class="gUniFormModalWindowExit form__btn-close"></a>
+		</div>
+		</div>
+	  </div>
+	</div>
+
+	<div class="gUniFormModalWindow form--modal form_block form-order_project">
+		<div class="gUniFormHideScrollBar">
+		<div class="gUniFormCn100">
+		<div class="overlay"></div>
+		<div class="gUniFormModalWindowContainer">
+		  <div class="gUniFormContainer">
+			<div class="uFormHeading">Заказать звонок</div>
+			<p>Заполните форму и мы свяжемся с вами в блоижайшее время</p>
+			<form enctype="multipart/form-data" action="" method="post" class="gUniForm">
+				<div class="input_text">
+					<input id="name" class="name" name="name" type="text" value="" placeholder="Имя">
+					<div class="uError"></div>
+				</div>
+				<div class="input_text">
+					<input id="phone" class="rfield phone" name="phone" type="text" value="" placeholder="*+7 (___) ___-__-__">
+					<div class="uError"></div>
+				</div>
+				<div class="input_text">
+					<input id="email" class="email" name="email" type="text" value="" placeholder="Email">
+					<div class="uError"></div>
+				</div>
+				<div class="textarea">
+					<textarea id="message" class="rfield message" name="message" placeholder="Вопрос"></textarea>
+					<div class="uError"></div>
+				</div>
+				<div class="input_personal_info">
+					<input type="checkbox" id="personal_info_main" name="personalInfo" data-required="Y" value="Y">
+					<label for="personal_info_main">Я даю согласие на <a href="/personal-info/" target="_blank" rel="nofollow noopener">обработку персональных данных</a></label>
+				</div>
+				<div class="buttons">
+					<button type="submit" name="web_form_submit" class="button" value="Отправить">Отправить</button>
+				</div>
+				<div class="errors"></div>
+			</form>
+		</div>
+		<a href="#" class="gUniFormModalWindowExit form__btn-close"></a>
+		</div>
+		</div>
+	  </div>
+	</div>
+
+	<div class="gUniFormModalWindow form--modal form_block">
+		<div class="gUniFormHideScrollBar">
+		<div class="gUniFormCn100">
+		<div class="overlay"></div>
+		<div class="gUniFormModalWindowContainer">
+		  <div class="gUniFormContainer">
+			<div class="uFormHeading">Спасибо!</div>
+			<p>Ваш запрос принят</p>
+		</div>
+		<a href="#" class="gUniFormModalWindowExit form__btn-close"></a>
+		</div>
+		</div>
+	  </div>
+	</div>
 
 </div>
     
