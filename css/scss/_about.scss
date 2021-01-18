@@ -292,6 +292,12 @@
         padding-top: 50px;
         padding-bottom: 40px;
     }
+
+    .text_and_image {
+        padding-bottom: 50px;
+        margin-bottom: 0px;
+    }
+    
 }
 
 @media screen and (max-width: 800px) {
@@ -321,7 +327,7 @@
         .image {
             width: 90%;
             max-width: 500px;
-            margin-bottom: 30px;
+            margin: 0 auto 30px;
         }
         .image::before {
             bottom: -20px;
@@ -352,6 +358,9 @@
         .text {
             padding: 20px 20px 30px;
         }
+    }
+    .text_and_image {
+        padding-bottom: 30px;
     }
 }
 

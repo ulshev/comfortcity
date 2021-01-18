@@ -507,7 +507,7 @@ ul.slick-dots {
 		li {
 			//margin-bottom: 10px;
             position: relative;
-			padding: 0px 0 0px 33px;
+			padding: 0px 0 0px 13px;
 			margin-bottom: 10px;
 			margin-left: 4px;
 			overflow: hidden;
@@ -523,7 +523,7 @@ ul.slick-dots {
                 width: 20px;
                 height: 20px;
                 top: 0px;
-                left: 20px;
+                left: 0px;
                 background: repeating-linear-gradient(-45deg, #FFF500, #FFF500 1px, transparent 1px, transparent 3px);
             }
         }
@@ -683,6 +683,27 @@ ul.slick-dots {
                 &:before {
                     transform: rotate(135deg);
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1030px){
+    .pagination {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:600px){
+    .pagination {
+        margin-bottom: 30px;
+
+        ul li {
+            margin: 0 5px;
+            .prev {
+                margin-right: 0px;
+            }
+            .next {
+                margin-left: 0px;
             }
         }
     }

@@ -15,7 +15,7 @@ $(document).ready(function() {
 	// });
 
 	
-	if ( /*window.innerWidth > 600 &*/ window.innerWidth < 1030 ) {
+	//if ( /*window.innerWidth > 600 &*/ window.innerWidth < 1030 ) {
 		$('.menu_button').on('click', function(e){
 			if( !$(this).hasClass('active') ) {
 				$(this).addClass('active');
@@ -25,7 +25,7 @@ $(document).ready(function() {
 				$(".main_menu").css('right', '-100%'); 
 			}
 		});
-	};
+	//};
 	
 	// animation
 	if ( window.innerWidth>0 ){
