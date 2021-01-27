@@ -66,6 +66,7 @@
                 height: 100%;
                 top: 0;
                 left: 0;
+                opacity: 0;
                 background: radial-gradient(64.37% 64.37% at 50% 35.63%, rgba(0, 0, 0, 0.21) 0%, rgba(0, 0, 0, 0.21) 0.01%, rgba(0, 0, 0, 0.7) 100%);
                 @include transition(all);
             }
@@ -79,7 +80,7 @@
         }
         .text {
             position: absolute;
-            top: 40px;
+            top: -200px;
             left: 12%;
             width: 80%;
             max-width: 270px;
@@ -90,7 +91,7 @@
         .more {
             position: absolute;
             left: 12%;
-            bottom: 37px;
+            bottom: -50px;
             font-weight: 500;
             color: #fff;
             letter-spacing: 0.03em;
@@ -112,15 +113,15 @@
 
         &:hover {
             a::before {
-                opacity: 0;
+                opacity: 1;
             }
 
             .text {
-                top: -100%;
+                top: 40px;
             }
 
             .more {
-                bottom: -50px;
+                bottom: 37px;
             }
         }
     }

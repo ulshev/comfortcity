@@ -276,4 +276,39 @@
         padding-left: 30px;
     }
 }
+
+
 //End Contact//
+
+.bx-404-container {
+    max-width: 500px;
+    margin: 10% auto 5%;
+    text-align: center;
+
+    .bx-404-block {
+        margin-bottom: 30px;
+
+        img {
+            max-width: 90%;
+        }
+    }
+
+    .bx-404-text-block {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        //margin-left: 20px;
+        //margin-right: 20px;
+        height: 40px;
+        line-height: 40px;
+        vertical-align: middle;
+        margin-bottom: 5px;
+
+        // &::after {
+        //     display: none;
+        // }
+    }
+}

@@ -50,7 +50,7 @@
 }
 
 .gUniFormModalWindowExit{
-	background: url(http://77.246.158.124/local/components/dweb/uni.form/templates/modal-window/images/exit.png) 0 0 no-repeat transparent;
+	/* background: url(http://77.246.158.124/local/components/dweb/uni.form/templates/modal-window/images/exit.png) 0 0 no-repeat transparent; */
 	-webkit-transition: none;
 	-o-transition: none;
 	transition: none;

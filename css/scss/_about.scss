@@ -201,7 +201,18 @@
     }
 }
 
-
+@media screen and (max-width: 1600px) {
+    #about_section {
+        .page_width {
+            padding-top: 100px;
+            padding-bottom: 20px;
+    
+            &::before {
+                top: 65px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 1500px) {
     #about_section {
         .page_width {

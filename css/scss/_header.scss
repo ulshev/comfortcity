@@ -1,12 +1,19 @@
  /* start header styles */
 
-// header.scroll {
-//     box-shadow: 10px 10px 20px rgba(36, 70, 122, 0.25);
-// }
+#header.scroll {
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.21);
+	background-color: #fff;
+
+	.page_width {
+		z-index: 1;
+		padding-top: 10px;
+		padding-bottom: 10px;
+    }
+}
 
 #header {
     width: 100%;
-	position: relative; //fixed;
+	position: fixed;
 	margin-bottom: 30px;
 	top: 0;
 	left: 0;
@@ -14,9 +21,12 @@
 	//background-color: #fff;
 	@include transition(all);
 
+
     .page_width {
 		z-index: 1;
 		padding-top: 30px;
+		padding-bottom: 30px;
+		@include transition(all);
     }
 }
 
@@ -100,11 +110,66 @@
 	ul {
 		display: flex;
 		justify-content: space-around;
+
+		li {
+			position: relative;
+		}
+
+		ul {
+			display: none;
+		}
 	}
+	
+
+	.submenu {
+		&::before {
+			position: absolute;
+			top: 99%;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			content: '';
+		}
+		ul {
+			display: block;
+			position: absolute;
+			top: 25px;
+			left: -30px;
+			//width: 300px;
+			background: rgba(0, 0, 0, 0.6);
+			backdrop-filter: blur(10px);
+			border-radius: 5px;
+			padding: 25px 30px;
+			font-size: 16px;
+			line-height: 24px;
+			opacity: 0;
+			pointer-events: none;
+			@include transition(all);
+
+			li {
+				padding: 5px 0;
+				white-space: nowrap;
+			}
+
+			a {
+				color: #fff;
+			}
+		}
+
+		&:hover {
+			ul {
+				opacity: 1;
+				top: 40px;
+				pointer-events: initial;
+			}
+		}
+	}
+
 }
 
 #header.no_bg {
-	position: absolute;
+	//position: //absolute;
+	background: none;
 	#header_cont {
 		.tel {
 			color: #fff;
@@ -128,6 +193,44 @@
 			border-color: #fff;
 		}
 	}
+}
+
+#header.no_bg.scroll {
+	background: #fff;
+	#header_cont {
+		.tel {
+			color: $color_text;
+
+			&::before {
+				filter: none;
+			}
+		}
+	}
+	.main_menu {
+		a {
+			color: $color_text;
+		}
+
+		.submenu {
+			ul a {
+				color: #fff;
+			}
+		}
+	}
+
+	.menu_button {
+		border-color: $color_a;
+
+		&::before {
+			border-color: $color_a;
+		}
+	}
+}
+#header + * { 
+	padding-top: 130px;
+}
+#header.no_bg + * { 
+	padding-top: 0px;
 }
 .menu_button {
 	border-top: 3px solid $color_a;
@@ -188,7 +291,7 @@
 		height: 100vh;
 		right: -100%;
 		top: 0;
-		padding: 115px 30px 40px;
+		padding: 115px 30px 0px;
 		margin: 0;
 		background: rgba(0, 0, 0, 0.6);
 		backdrop-filter: blur(10px);
@@ -201,11 +304,65 @@
 
 		ul {
 			display: block;
+			overflow-y: auto;
+			max-height: 100%;
 			li {
 				margin-bottom: 20px;
 			}
 		}
+
+		.submenu {
+			&::before {
+				display: none;
+			}
+			a::after {
+				content: '';
+				display: inline-block;
+				position: relative;
+				margin-left: 5px;
+				border-top: 8px solid #fff;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				@include transition(all);
+			}
+
+			ul {
+				position: relative;
+				top: 0;
+				left: 0;
+				background: none;
+				backdrop-filter: initial;
+				padding: 10px 0 0px 10px;
+				display: none;
+				transition: none;
+
+				li {
+					white-space: initial;
+					padding: 0;
+					margin-bottom: 10px;
+
+					a {
+						&::after {
+							display: none;
+						}
+					}
+				}
+			}
+
+			&:hover ul {
+				top: 0;
+			}
+
+			&.show {
+				a::after {
+					transform: rotate(-180deg);
+				}
+			}
+		}
 	}	
+	#header.no_bg.scroll .main_menu a {
+		color: #fff;
+	}
 }
 
 @media screen and (max-width: 800px) {	

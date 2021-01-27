@@ -1,54 +1,54 @@
 @font-face {
     font-family: 'Ubuntu';
-    src: url('../fonts/ubuntulight.eot');
-    src: url('../fonts/ubuntulight.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ubuntulight.woff2') format('woff2'),
-         url('../fonts/ubuntulight.woff') format('woff'),
-         url('../fonts/ubuntulight.ttf') format('truetype');
+    src: url('../fonts/ubuntu-light.eot');
+    src: url('../fonts/ubuntu-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-light.woff2') format('woff2'),
+         url('../fonts/ubuntu-light.woff') format('woff'),
+         url('../fonts/ubuntu-light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url('../fonts/ubunturegular.eot');
-    src: url('../fonts/ubunturegular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ubunturegular.woff2') format('woff2'),
-         url('../fonts/ubunturegular.woff') format('woff'),
-         url('../fonts/ubunturegular.ttf') format('truetype');
+    src: url('../fonts/ubuntu-regular.eot');
+    src: url('../fonts/ubuntu-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-regular.woff2') format('woff2'),
+         url('../fonts/ubuntu-regular.woff') format('woff'),
+         url('../fonts/ubuntu-regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url('../fonts/ubuntumedium.eot');
-    src: url('../fonts/ubuntumedium.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ubuntumedium.woff2') format('woff2'),
-         url('../fonts/ubuntumedium.woff') format('woff'),
-         url('../fonts/ubuntumedium.ttf') format('truetype');
+    src: url('../fonts/ubuntu-medium.eot');
+    src: url('../fonts/ubuntu-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-medium.woff2') format('woff2'),
+         url('../fonts/ubuntu-medium.woff') format('woff'),
+         url('../fonts/ubuntu-medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url('../fonts/ubuntubold.eot');
-    src: url('../fonts/ubuntubold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ubuntubold.woff2') format('woff2'),
-         url('../fonts/ubuntubold.woff') format('woff'),
-         url('../fonts/ubuntubold.ttf') format('truetype');
+    src: url('../fonts/ubuntu-bold.eot');
+    src: url('../fonts/ubuntu-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-bold.woff2') format('woff2'),
+         url('../fonts/ubuntu-bold.woff') format('woff'),
+         url('../fonts/ubuntu-bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('roboto-medium.eot');
-    src: url('roboto-medium.eot?#iefix') format('embedded-opentype'),
-         url('roboto-medium.woff2') format('woff2'),
-         url('roboto-medium.woff') format('woff'),
-         url('roboto-medium.ttf') format('truetype');
+    src: url('../fonts/roboto-medium.eot');
+    src: url('../fonts/roboto-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-medium.woff2') format('woff2'),
+         url('../fonts/roboto-medium.woff') format('woff'),
+         url('../fonts/roboto-medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }

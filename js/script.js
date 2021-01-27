@@ -14,18 +14,51 @@ $(document).ready(function() {
 	// 	$(".main_slide_quantity").html('0' + main_slider_items);
 	// });
 
+	// добавляем класс в шапку при скролле
+	$(window).on('load scroll resize', function(){
+		//var height = $(window).height() - 100;
+		if($(this).scrollTop() > 20) {
+			$('#header').addClass('scroll');
+		} else {
+			$('#header').removeClass('scroll');
+		} 
+	});
+
+	// добавляем класс в пункты с подменю
+	$('ul.menu > li').each(function(){
+		var list = $(this).children('ul');
+
+		if(list.length > 0){
+			list.parent().addClass('submenu');
+		};
+	});
+
+	$('.menu_button').on('click', function(e){
+		if( !$(this).hasClass('active') ) {
+			$(this).addClass('active');
+			$(".main_menu").css('right', '0%');
+		}else{
+			$(this).removeClass('active');
+			$(".main_menu").css('right', '-100%'); 
+			$(".menu .submenu ul").slideUp(500);
+			$(".menu .submenu ul").removeClass('show');  
+		}
+	});
 	
-	//if ( /*window.innerWidth > 600 &*/ window.innerWidth < 1030 ) {
-		$('.menu_button').on('click', function(e){
-			if( !$(this).hasClass('active') ) {
-				$(this).addClass('active');
-				$(".main_menu").css('right', '0%');
-			}else{
-				$(this).removeClass('active');
-				$(".main_menu").css('right', '-100%'); 
-			}
+	if ( /*window.innerWidth > 600 &*/ window.innerWidth < 1030 ) {
+		$('.menu .submenu > a').on('click', function(e){
+		    if( !$(this).parent().hasClass('show') ) {
+				$(this).parent().addClass('show');  
+				$(this).parent().children('ul').slideDown(500);
+				e.preventDefault();
+		    }
+		    else{
+				$(this).parent().removeClass('show');  
+				$(this).parent().children('ul').slideUp(500);
+				e.preventDefault();
+		    }
 		});
-	//};
+	};
 	
 	// animation
 	if ( window.innerWidth>0 ){
@@ -72,7 +105,7 @@ $(document).ready(function() {
 		prevArrow: '<span class="slick-prev">&nbsp;</span>',
 		nextArrow: '<span class="slick-next">&nbsp;</span>',
 	    dots: false,
-	    //centerMode: true,
+	    centerMode: true,
 		//vertical: true,
 		//focusOnSelect: true,
 		//initialSlide: 1,

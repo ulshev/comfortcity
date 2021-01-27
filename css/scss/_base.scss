@@ -712,6 +712,10 @@ ul.slick-dots {
 main {
     .page_width {
         padding-bottom: 90px;
+
+        p + h2, p + h3, p + h4 {
+            padding-top: 25px;
+        }
     }
 }
 @media screen and (max-width:1030px){
